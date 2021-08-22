@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<!-- Stylize Login form -->
+<form action="{% url 'dob:welcome' %}" method="POST">
+    {% csrf_token %}
+    <div class="container"> <!--Style root div with .container class -->
+        <h1>Welcome</h1>
+        <div class="form-group"> <!--Style second div with .form-group class -->
+          <label for="username"><b>Name</b></label>
+          <input id="username" class = "form-control" type="text" placeholder="Enter Name" name="username" required> <!--Style input with .form-control class -->
+          <label for="datetime"><b>Password</b></label>
+          <input id="datetime" class = "form-control" type="date"  placeholder="Enter DOB" name="datetime" required> <!--Style input with .form-control class -->
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button> <!--Style button with .btn and .btn-primary class -->
+    </div>
+</form>
+
+</body>

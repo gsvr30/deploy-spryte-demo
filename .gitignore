@@ -1,0 +1,10 @@
+# IDE - VSCode
+.vscode/*
+
+# backend
+**/*.pyc
+**/migrations
+**/__pycache__
+**/logs
+**/db.sqlite3
+**/.env
