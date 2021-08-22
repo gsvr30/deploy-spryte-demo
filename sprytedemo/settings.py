@@ -28,7 +28,7 @@ SECRET_KEY = '-gnol*!t5o7mp05^=@v3nr0e@zx8eisxs!8n^uf4n*1@q#dagj'
 # DEBUG = True
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://deploy-spryte-demo.herokuapp.com/', 'localhost', '127.0.0.1']
 
 
 # Application definition

@@ -18,4 +18,4 @@ def hello(request):
 
         message = f'Hi {name}, you were born on a {weekday}!'
         return render(request, 'dob/welcome_user.html',
-            {'message': message})
+            {'message': message, 'baseurl': 'https://deploy-spryte-demo.herokuapp.com/'})
